@@ -1,0 +1,552 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing:border-box;
+    transition: .2s linear;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif; */
+font-family: 'Protest Revolution', sans-serif;
+font-family: 'Protest Riot', sans-serif; */ */
+
+}
+
+
+html{
+scroll-behavior: smooth;
+scroll-padding-top: 6rem;
+overflow-x: hidden;
+}
+.btn{
+display: inline-block;
+margin-top: 1rem;
+border-radius: 5rem;
+background: #333;
+color: #7aafa4;
+padding: .9rem 3.5rem;
+cursor: pointer;
+font-size: 1.7rem;
+font-family: 'Allura', cursive;
+}
+.btn:hover{
+background: #181817;
+}
+header{
+
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+padding: 2rem 9%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 1000;
+background-color: white;
+box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+#captu{
+margin-top: -70px;
+margin-left: -30px;
+  position: fixed;
+}
+nav{
+height: 30px;
+width:100%;
+
+}
+nav ul{
+float: right;
+margin-right: -25px;
+}
+nav ul li{
+display: inline-block;
+line-height: 80px;
+margin: 0 5px;
+}
+nav ul li a{
+color:#623412;
+font-size: 22px;
+text-transform: uppercase;
+padding: 7px 13px;
+}
+.checkbtn{
+font-size: 32px;
+color: white;
+float: right;
+line-height: 80px;
+margin-right: 40px;
+margin-top: -13px;
+cursor: pointer;
+}
+#check{
+display: none;
+}
+header .icons a{
+font-size: 2.2rem;
+color: #623412 ;
+margin-left: 1.5rem;
+}
+header .icons a:hover{
+color:rgb(10, 7, 4);
+}
+
+@media(max-width:991px){
+html{
+    font-size:75%;F
+}
+header{
+    padding: 1.8rem;
+}
+
+#captu{
+  margin-top: -70px;
+  margin-left: -30px; 
+    position: fixed;
+  }
+.home{
+    background-position: left;
+}
+label.logo{
+    font-size: 32px;
+    padding: 50px;
+}
+nav ul li a{
+    font-size: 18px;
+
+}
+}
+
+@media(max-width:750px){
+.checkbtn{
+    display: block;
+    margin-top: -13px;
+flex-wrap: nowrap;
+
+}
+#captu{
+  flex-wrap: nowrap;}
+.fa-bars{
+    color: #623412;
+    flex-wrap: nowrap;
+    margin-right: 0;
+}
+ul{
+    position: fixed;
+    width: 100%;
+    height: 64vh;
+    background-color:white;
+    top: 80px;
+    left: -100%;
+    text-align:center;
+    transition: all .5s;
+}
+
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 15px;
+
+}
+
+
+nav ul li a{
+    font-size: 25px;
+}
+nav ul li a:hover{
+    background: none;
+    color: #623412;
+}
+#check:checked ~ ul{
+ left: 0;
+
+}
+.home .content h3{
+    font-size: 5.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+.home .content span{
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+}
+@media(max-width:450px){
+.checkbtn{
+  display: block;
+  margin-top: -13px;
+
+}
+.fa-bars{
+  color: #623412;
+}
+ul{
+  position: fixed;
+  width: 100%;
+  height: 64vh;
+  background-color: bisque; 
+  top: 80px;
+  left: -100%;
+  text-align:center;
+  transition: all .5s;
+}
+
+nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 15px;
+
+}
+
+
+nav ul li a{
+  font-size: 25px;
+}
+nav ul li a:hover{
+  background: none;
+  color: #623412;
+}
+#check:checked ~ ul{
+left: 0;
+
+}
+.home .content h3{
+  font-size: 5.5rem;
+}
+.home .content span{
+  font-size: 2.5rem;
+}
+}
+
+
+/* ************** */
+
+#image{
+    width: 100%;
+    height: 100%;
+  }
+ 
+ #heading{
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 115px;
+  
+ } 
+ .main{
+display: flex;
+
+ }
+ #first{
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-top:150px;
+ }
+ .column {
+  float: left;
+  width: 50%;
+  padding:10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+ 
+
+  
+@media screen and (max-width: 436px) {
+
+  #heading{
+    text-align: center;
+    font-size: 1rem;
+  margin-top: 95px;
+
+}
+#first{
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-top:100px;
+ }
+
+.main{
+  display: flex;
+  
+   }
+  
+}
+GALLERY
+.header {
+  text-align: center;
+  padding: 32px;
+  font-family: 'Courier New', Courier, monospace;
+}
+#gal{
+  text-align: center;
+}
+
+
+.rows {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column1 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column1 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column1 {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/* review */
+.container {
+  padding: 20px;
+  width: 100%;
+ 
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #090921;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  width: 43%;
+}
+
+.clientImage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.clientImage span {
+  margin-left: 10px;
+}
+
+.clientImage img {
+  width: 40px;
+}
+
+.reviewSection {
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.reviewItem {
+  width: 300px;
+  
+  margin: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #10102a;
+  border: 1px solid #10102a;
+  transition: all .2s linear;
+}
+
+.reviewItem:hover {
+  border-color: aqua;
+  transform: scale(1.01);
+  background-color: #090921;
+  box-shadow: 0 0px 5px 0px #cbc0c0;
+}
+
+.top {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top ul {
+  display: flex;
+  list-style: none;
+}
+
+.top ul li {
+  padding-left: 4px;
+}
+
+article p {
+  font-size: 15px;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  font-family: system-ui;
+}
+@media screen and (max-width:992px) {
+  .header{padding: 1.3rem 5%;}}
+
+@media screen and (max-width:768px) {
+  .icon{display: flex;}
+  .container {
+      height: auto;
+  }
+
+  .description {
+      width: 90%;
+  }
+}
+
+
+@media screen and (max-width:375px) {
+  .reviewSection {
+      padding: 0;
+  }
+
+  .reviewItem {
+      width: 100%;
+  }
+
+  .clientImage {
+      margin-bottom: 0.6rem;
+  }
+
+  .top {
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+}
+
+/* contact */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container3 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column3 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column3, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+h4{
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+/* about */
+/* Float four columns side by side */
+.column5 {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row5 {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row5:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column5 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
